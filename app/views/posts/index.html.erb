@@ -1,0 +1,18 @@
+<h1>Listing posts</h1>
+
+<table id="posts">
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Position</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<%=render :partial => "post", :collection => @posts%>
+</table>
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>
